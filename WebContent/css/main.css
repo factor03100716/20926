@@ -1,0 +1,138 @@
+@CHARSET "UTF-8";
+body{
+	margin: 0;
+	padding:0;
+	background: black;
+}
+body > div{
+	width: 100%;
+}
+
+.header{
+	height: 45px;
+	background-color:rgba(0, 0, 0, 0.8);
+    position: absolute;
+	z-index: 10;
+}
+.inheader{
+    padding: 0;
+    width: 300px;
+    padding-top: 10px;
+    margin: 0 auto 0 auto;
+}
+
+.inheader li{
+	list-style: none;
+    color: white;
+    float: left;
+    margin-right: 20px;
+}
+.main{
+	height: 800px;
+}
+.main_video{
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	border-bottom:2px solid white;
+}
+.main_video video{
+	max-width: 100%;
+}
+.main_over{
+	width: 100%;
+	height: 796px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	z-index: 5;
+}
+.main_over p{
+	color:white;
+	text-align:center;
+	width:600px;
+	font-size:60pt;
+	font-weight:700;
+	margin:0 auto 0 auto;
+	top: 40%;
+    position: relative;
+}
+.main_over p:first-of-type{
+	opacity:0.5;
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-image: url(../img/main_over_p.jpg);
+}
+.sub_main{
+	height: 200px;
+	padding-top:130px; 
+}
+.sub_main p{
+	color:white;
+	font-size:15pt;
+	font-weight: 700;
+	width: 650px;
+	text-align: center;
+	margin:0 auto 0 auto;
+}
+.board > div{
+	box-sizing: border-box;
+	width: 25%;
+	float: left;
+	border:1px solid white;
+	height: 710px;
+    overflow: hidden;
+}
+.board > div > div{
+	width:100%;
+	height: 100%;
+	background: black;
+}
+.board > div > div > p{
+	color:white;
+	font-size:3.1vw;
+	font-weight:700;
+	margin:0 50px  0 50px;
+	display: block;
+
+}
+.board > div > div > p:nth-child(1){
+	margin-top:100px;
+}
+.board > div > img{
+	display: block;
+	height: 100%;
+    width: 100%;
+	transition: 1s ease-out;
+}
+.board > div:hover > div{
+	display: none;
+}
+.board > div:hover > img{
+	display: block;
+	transform:scale(1.1);
+}
+.board > div:nth-child(4n-3) > div > p:first-of-type{
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-image: url(../img/board_p_01.jpg);
+}
+.board > div:nth-child(4n-2) > div > p:first-of-type{
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-image: url(../img/board_p_02.jpg);
+}
+.board > div:nth-child(4n-1) > div > p:first-of-type{
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-image: url(../img/board_p_03.jpg);
+}
+.board > div:nth-child(4n) > div > p:first-of-type{
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-image: url(../img/board_p_04.jpg);
+}
